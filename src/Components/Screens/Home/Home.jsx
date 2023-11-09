@@ -4,7 +4,7 @@ import { BsFillHouseFill } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 
 function Home() {
-    const {user, onClose} = useTelegram();
+    const {user} = useTelegram();
     return ( 
         <>
             <div className='bot-name'>
