@@ -54,7 +54,7 @@ function Home() {
                 </Link>
             </div>
             <div className="nav-buttons">
-                <button onClick={onClose()}>
+                <button>
                     <RxCross1 size={25}/> 
                 </button>
                 <Link to='/' style={{
