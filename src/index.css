@@ -1,13 +1,77 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Verdana, sans-serif;
+  height: 100vh;
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+}
+
+.bot-name p{
+  font-size: 14px;
+  font-weight: 400;
+  font-variant: normal;
+}
+.username-text h2{
+  font-size: 20px;
+  font-weight: 500;
+  font-variant: normal;
+}
+
+.bot-name {
+  margin-top: 10px;
+  width: 100vw;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.username-text {
+  margin-top: 40px;
+  width: 100vw;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nav-buttons button {
+  width: 60px;
+  height: 35px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.nav-buttons {
+  width: 100vw;
+  height: 35px;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  bottom: 120px;
+}
+@media (max-width: 480px) {
+  .nav-buttons {
+    width: 100vw;
+    height: 35px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 220px;
+  }
+}
+
+
+.buttons {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 250px;
 }
